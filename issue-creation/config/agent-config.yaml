@@ -1,0 +1,94 @@
+projects:
+  AA:
+    name: "Application Architecture"
+    description: "Include technical architecture considerations, reference existing system components, specify integration requirements"
+    custom_fields:
+      type_of_work:
+        field_id: "customfield"
+        required: true
+        options:
+          - id: 12001
+            value: "Innovation Initiative"
+          - id: 12002
+            value: "Process Enhancement"
+          - id: 12003
+            value: "Operational Support"
+          - id: 12004
+            value: "System Evolution"
+          - id: 12005
+            value: "Feature Development"
+    issue_types:
+      - name: "Epic"
+        template: "AA_TASK"
+        type_of_work_required: true
+        notes: "Large initiatives - Epic template not available, use AA Task template as base"
+      - name: "Story"
+        template: "AA_TASK"
+        type_of_work_required: true
+        notes: "User-focused features"
+      - name: "Task"
+        template: "AA_TASK"
+        type_of_work_required: true
+        notes: "Standard development work"
+      - name: "Bug"
+        template: "AA_TASK"
+        type_of_work_required: true
+        notes: "Usually Operational Support"
+      - name: "Spike"
+        template: "AA_TASK"
+        type_of_work_required: true
+        notes: "Research/investigation"
+
+  AAA:
+    name: "AAA Project"
+    description: "Follow coding standards references, include security considerations, specify testing requirements"
+    custom_fields:
+      type_of_work:
+        field_id: "customfield"
+        required: true
+        options:
+          - id: 12001
+            value: "Innovation Initiative"
+          - id: 12002
+            value: "Process Enhancement"
+          - id: 12003
+            value: "Operational Support"
+          - id: 12004
+            value: "System Evolution"
+          - id: 12005
+            value: "Feature Development"
+    issue_types:
+      - name: "Task"
+        template: "AAA_TASK"
+        type_of_work_required: true
+        notes: "Standard development work"
+      - name: "daily-detective"
+        template: "AAA_DAILY-DETECTIVE"
+        type_of_work_required: true
+        notes: "Usually Operational Support"
+      - name: "Epic"
+        template: "AAA_EPIC"
+        type_of_work_required: true
+        notes: "Large initiatives"
+      - name: "Hello World"
+        template: "AGG_HELLO-WORLD"
+        type_of_work_required: true
+        notes: "Onboarding requests"
+      - name: "Spike"
+        template: "AAA_TASK"
+        type_of_work_required: true
+        notes: "Research/investigation"
+      - name: "Bug"
+        template: "AAA_TASK"
+        type_of_work_required: true
+        notes: "Usually Operational Support"
+
+  AGG:
+    name: "Application Governance Guidelines"
+    description: "Include compliance requirements, reference approval processes, specify documentation needs"
+    custom_fields: {}
+    issue_types:
+      - name: "Hello World"
+        template: "AGG_HELLO-WORLD"
+        type_of_work_required: false
+        notes: "Onboarding requests"
